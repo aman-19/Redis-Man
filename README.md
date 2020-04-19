@@ -1,6 +1,6 @@
 # Redis-Man
 
-This is a basic implementation of Redis with some queries like -
+This is a basic implementation of Redis in C++14 with some queries like -
 1. **GET**(https://redis.io/commands/get)
 2. **SET**(https://redis.io/commands/set)
 3. **EXPIRE**(https://redis.io/commands/expire)
@@ -8,15 +8,17 @@ This is a basic implementation of Redis with some queries like -
 5. **ZRANK**(https://redis.io/commands/zrank)
 6. **ZRANGE**(https://redis.io/commands/zrange)
 
+**Note:** The database is saved in a file named **dump.txt**. Therefore, the data is persistent and will load the next time you run the program. But because of the same reason the data can be lost if this file is deleted. You need to have g++(x >= 11) to avoid any errors.
+
 ## Clone the current repo <br>
 `https://github.com/aman-19/Redis-Man.git`
 
 ## Run program on Linux
-`g++ -o main main.cpp RedisObj.cpp AVLTree.cpp Node.cpp`
+`g++ -o main main.cpp RedisObj.cpp AVLTree.cpp Node.cpp`<br>
 `./main`
 
 ## Run program on Windows
-`g++ -o main main.cpp RedisObj.cpp AVLTree.cpp Node.cpp`
+`g++ -o main main.cpp RedisObj.cpp AVLTree.cpp Node.cpp`<br>
 `main.exe`
 
 ## Commands
