@@ -29,13 +29,17 @@ EXPIRE <key> <time-in-sec>
 ZADD <set-name> <score1(float)> <element1(string)> <score2> <element2> ...
 ZRANK <set-name> <element(string)>
 ZRANGE <set-name> <start(int)> <end(int)>
+SAVE NOW
+EXIT NOW
 ```
 ### Example Commands
 ```
 SET key val
 GET key
 ZADD setKey 1 val1 2 val2....
+SAVE NOW
 ZRANK setKey val
 ZRANGE setKey 0 9
+EXIT NOW
 ```
 ```
